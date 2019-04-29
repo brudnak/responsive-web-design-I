@@ -257,6 +257,10 @@ h1 {
     margin: 30px 0px;
 }
 
+.service__card a {
+    color: #000;
+}
+
 /* TABLET */
 @media (max-width: 800px) {
 
@@ -334,5 +338,22 @@ h1 {
 
     #middle-section div, #bottom-section div {
         margin: 30px 0px;
+    }
+
+    .service, .facts {
+        display: flex;
+        align-self: center;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .service__card, .facts__info {
+        width: 100%;
+    }
+} /* END MOBILE */
+
+@media (max-width: 760px) {
+    .service__card{
+        width: 100%;
     }
 }
