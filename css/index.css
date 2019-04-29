@@ -154,7 +154,12 @@ services-header-img {
 #bottom-section {
 	display: flex;
 	justify-content: space-evenly;
-	align-items: center;
+    align-items: center;
+    border-bottom: 1px solid #000;
+}
+
+#bottom-section p {
+    padding-bottom: 40px;
 }
 
 #bottom-section h2 {
@@ -164,7 +169,8 @@ services-header-img {
 .contact {
 	display: flex;
 	justify-content: flex-start;
-	align-items: center;
+    align-items: center;
+    padding-bottom: 40px;
 }
 
 .contact h2 {
@@ -247,6 +253,10 @@ h1 {
 	line-height: 1.2em;
 }
 
+#middle-section, #bottom-section {
+    margin: 30px 0px;
+}
+
 /* TABLET */
 @media (max-width: 800px) {
 
@@ -279,3 +289,50 @@ h1 {
         display: none;
     }
 } /* END TABLET */
+
+/* MOBILE */
+@media (max-width: 500px) {
+    header {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav {
+        display: flex;
+        align-self: center;
+        order: 1;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    header nav a {
+        text-align: center;
+        border-bottom: 1px solid #000;
+        padding: 20px;
+    }
+
+    header nav a:nth-of-type(1) {
+        border-top: 1px solid #000;
+    }
+
+    header .logo {
+        margin: 30px 0px;
+        display: flex;
+        align-self: center;
+        order: 0;
+    }
+
+    #middle-section, #bottom-section {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    #middle-section div, #bottom-section div {
+        margin: 30px 0px;
+    }
+}
