@@ -1,32 +1,18 @@
-<!doctype html>
-<html lang="en">
+<?php 
+    include("includes/header.php");
+    $serviceImages = array (
+        "img/services-header-1.jpg",
+        "img/services-header-2.jpg",
+        "img/services-header-3.jpg",
+        "img/services-header-4.jpg",
+        "img/services-header-5.jpg"
+    );
+    shuffle($serviceImages)
+?>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <title>Great Idea - Responsive I</title>
-    <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css">
-</head>
-
-<body>
-    <div class="container">
-
-        <header>
-            <nav>
-                <a href="services.php">Services</a>
-                <a href="#">Product</a>
-                <a href="#">Vision</a>
-                <a href="#">Features</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-            </nav>
-            <a href="index.html"><img class="logo" src="img/logo.png" alt="Great Idea! Company logo."></a></a> 
-        </header>
-
-        <main>
+            <main>
             <div class="services-header-img">
-                <img src="img/services-header.jpg" alt="Our services header image">
+                <img src="<?php echo $serviceImages[0]?>" alt="Our services header image">
             </div>
             <main>
                 <h1>Services</h1>
@@ -137,12 +123,6 @@
                     </div>
                 </section>
             </main>
-
-            <footer>
-                <p> Copyright Great Idea! 2018</p>
-            </footer>
-
-    </div>
-</body>
-
-</html>
+<?php 
+    include("includes/footer.php");
+?>
