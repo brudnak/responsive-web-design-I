@@ -70,39 +70,45 @@ h1, h2, h3, h4, h5 {
 	margin: 0 auto;
 }
 
-.main-nav {
+header {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: center;
 	margin-top: 30px;
 }
 
-.main-nav a {
-	text-decoration: none;
-	color: #8d929b;
+nav {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+	color: #c8bcb4;
 	font-size: 22px;
 }
 
-header {
-	display: flex;
-	justify-content: space-evenly;
-	margin-top: 50px;
+.top-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 0px;
+    border-bottom: 1px solid #000;
 }
 
-/* START .header-left */
-.header-left {
+.top-left {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
 }
 
-.header-left h1 {
+.top-left h1 {
 	font-size: 88px;
 	text-align: center;
 }
 
-.header-left a {
+.top-left a {
 	text-decoration: none;
 	color: #000;
 	font-size: 44px;
@@ -110,28 +116,17 @@ header {
 	padding: 5px 30px;
 }
 
-/* END .header-left */
-
-/* START top-section */
-#top-section {
+#middle-section {
 	display: flex;
 	justify-content: space-evenly;
-	align-items: center;
+    align-items: center;
+    margin-top: 30px;
 }
 
-#top-section h2 {
+#middle-section h2 {
 	font-size: 36px;
 }
 
-/* END top-section */
-
-hr {
-	border-bottom: 1px solid #000;
-	margin-top: 40px;
-	margin-bottom: 40px;
-}
-
-/* START hero image */
 .hero-image {
 	width: 100%;
 	padding-top: 30px;
@@ -144,9 +139,6 @@ hr {
 	margin: 0 auto;
 }
 
-/* END hero image */
-
-/* START services image */
 services-header-img {
 	width: 100%;
 }
@@ -159,9 +151,6 @@ services-header-img {
 	margin-bottom: 50px;
 }
 
-/* END services image */
-
-/* START bottom section */
 #bottom-section {
 	display: flex;
 	justify-content: space-evenly;
@@ -171,8 +160,6 @@ services-header-img {
 #bottom-section h2 {
 	font-size: 36px;
 }
-
-/* END bottom section */
 
 .contact {
 	display: flex;
@@ -258,4 +245,35 @@ h1 {
 .facts__info p {
 	font-size: 18px;
 	line-height: 1.2em;
+}
+
+/* TABLET */
+@media ( max-width: 800px ) {
+
+    header{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    header nav{
+        display: flex;
+        align-self: center;
+        order: 1;
+        width: 100%
+    }
+    header .logo{
+        margin: 30px 0px;
+        display: flex;
+        align-self: center;
+        order: 0;
+    }
+
+    .top-left {
+        align-self: center;
+    }
+
+    .top-right {
+        display: none;
+    }
 }
