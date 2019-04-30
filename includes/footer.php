@@ -1,8 +1,8 @@
 <footer>
-                <p> Copyright Great Idea! 2018</p>
-            </footer>
+    <p> Copyright Great Idea! 2018</p>
+</footer>
 
-    </div>
+</div>
 </body>
 
 </html>
