@@ -2,11 +2,9 @@
 
 Andrew Brudnak
 
-# Screenshots
+# Screenshot
 
-![Image of Website on an iPad](https://imgur.com/ukyqcXw)
-
-![Image of Website on an iPhone](https://imgur.com/leIsPvK)
+![Image of Website on an iPad](https://i.imgur.com/ukyqcXw.png)
 
 # Responsive Web Design I: Adaptive Website
 
