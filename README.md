@@ -1,10 +1,16 @@
+# Student
+
+Andrew Brudnak
+
+# Screenshots
+
+![Image of Website on an iPad](https://imgur.com/ukyqcXw)
+
+![Image of Website on an iPhone](https://imgur.com/leIsPvK)
+
 # Responsive Web Design I: Adaptive Website
 
 It's time to expand our CSS skills into multiple devices.  You will be creating an adaptive version of the "Great Idea" design. You will be working through design mock ups for desktop, tablet, and mobile devices located in the [design-files](design-files) folder.
-
-## Student
-
-Andrew Brudnak
 
 ## Task 1: Set Up The Project With Git
 
