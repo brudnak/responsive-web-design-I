@@ -1,3 +1,359 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 30px;
+}
+
+nav {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+	color: #c8bcb4;
+	font-size: 22px;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 0px;
+    border-bottom: 1px solid #000;
+}
+
+.top-left {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.top-left h1 {
+	font-size: 88px;
+	text-align: center;
+}
+
+.top-left a {
+	text-decoration: none;
+	color: #000;
+	font-size: 44px;
+	border: 1px solid #000;
+	padding: 5px 30px;
+}
+
+#middle-section {
+	display: flex;
+	justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#middle-section h2 {
+	font-size: 36px;
+}
+
+.hero-image {
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.hero-image img {
+	width: 100%;
+	width: calc(100%);
+	margin: 0 auto;
+}
+
+services-header-img {
+	width: 100%;
+}
+
+.services-header-img img {
+	width: 100%;
+	width: calc(100%);
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#bottom-section {
+	display: flex;
+	justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid #000;
+}
+
+#bottom-section p {
+    padding-bottom: 40px;
+}
+
+#bottom-section h2 {
+	font-size: 36px;
+}
+
+.contact {
+	display: flex;
+	justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.contact h2 {
+	font-size: 30px;
+}
+
+footer {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+address a {
+	text-decoration: none;
+	color: #000;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+.service {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.service__card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	width: 47%;
+	padding: 22px;
+	background-color: #f3f3f3;
+	margin: 10px;
+	border: 1px solid #000;
+}
+
+.service__card a {
+	text-decoration: none;
+	background-color: #fff;
+	border: 1px solid #000;
+	padding: 5px 20px;
+	margin-top: 30px;
+	width: 150px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.service__card h2 {
+	font-size: 28px;
+}
+
+.facts {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.facts__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	width: 47%;
+	margin-bottom: 40px;
+}
+
+.facts__info ul {
+	margin-top: 30px;
+	list-style: inside;
+	font-size: 18px;
+}
+
+.facts__info h2 {
+	font-size: 28px;
+}
+
+.facts__info p {
+	font-size: 18px;
+	line-height: 1.2em;
+}
+
+#middle-section, #bottom-section {
+    margin: 30px 0px;
+}
+
+.service__card a {
+    color: #000;
+}
+
+/* TABLET */
+@media (max-width: 800px) {
+
+    header {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav {
+        display: flex;
+        align-self: center;
+        order: 1;
+        width: 100%
+    }
+
+    header .logo {
+        margin: 30px 0px;
+        display: flex;
+        align-self: center;
+        order: 0;
+    }
+
+    .top-left {
+        align-self: center;
+    }
+
+    .top-right {
+        display: none;
+    }
+} /* END TABLET */
+
+/* MOBILE */
+@media (max-width: 500px) {
+    header {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav {
+        display: flex;
+        align-self: center;
+        order: 1;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    header nav a {
+        text-align: center;
+        border-bottom: 1px solid #000;
+        padding: 20px;
+    }
+
+    header nav a:nth-of-type(1) {
+        border-top: 1px solid #000;
+    }
+
+    header .logo {
+        margin: 30px 0px;
+        display: flex;
+        align-self: center;
+        order: 0;
+    }
+
+    #middle-section, #bottom-section {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    #middle-section div, #bottom-section div {
+        margin: 30px 0px;
+    }
+
+    .service, .facts {
+        display: flex;
+        align-self: center;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .service__card, .facts__info {
+        width: 100%;
+    }
+} /* END MOBILE */
+
+@media (max-width: 760px) {
+    .service__card{
+        width: 100%;
+    }
+}
